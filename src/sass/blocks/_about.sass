@@ -1,0 +1,68 @@
+.about
+  &-inner
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 0 34px 51px
+    @media (max-width: 768px)
+      padding: 0 24px 51px
+    @media (max-width: 576px)
+      flex-direction: column
+  &-info
+    position: relative
+    margin-right: 36px
+    @media (max-width: 576px)
+      margin-right: 0
+    &__hidden
+      height: 180px
+      overflow: hidden
+      transition: .5s
+      margin-bottom: 10px
+      @media (max-width: 576px)
+        height: 90px
+      &--active
+        height: auto
+        transition: .5s
+    &__text
+      max-width: 490px
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.2px
+      margin-bottom: 14px
+    &__btn
+      width: 135px
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.2px
+      cursor: pointer
+      @media (max-width: 576px)
+        margin-bottom: 16px
+      &-arrow
+        width: 7px
+        height: 10px
+        background-size: center
+        margin-left: 7px
+        margin-right: 10px
+        &--active
+          transform: rotate(180deg)
+    &__wrapper
+      width: auto
+      height: auto
+      @media (max-width: 576px)
+        height: 300px
+      @media (max-width: 480px)
+        height: 200px
+      @media (max-width: 320px)
+        height: 174px
+    &__image
+      width: 100%
+      border-radius: 5px
+      overflow: hidden
+      @media (max-width: 576px)
+        position: absolute
+        left: 0
+        right: 0
+        width: 100%
+        @media (max-width: 576px)
+          height: 300px

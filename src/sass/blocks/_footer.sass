@@ -1,0 +1,33 @@
+.footer
+  border-top: 1px solid $aqua
+  &-inner
+    @include flex-start
+    align-items: flex-start
+    padding: 32px 34px 21px
+    color: $gray
+    font-weight: 500
+    font-size: 14px
+    line-height: 16px
+    @media (max-width: 768px)
+      padding: 32px 24px 21px
+    @media (max-width: 576px)
+      padding: 16px 4px 19px
+      flex-direction: column
+      align-items: center
+      text-align: center
+  &-copirite
+    max-width: 220px
+    text-decoration: none
+    color: inherit
+    @media (max-width: 576px)
+      margin-bottom: 16px
+  &-political
+    text-decoration: none
+    color: inherit
+    @media (max-width: 576px)
+      margin-bottom: 16px
+  &-info
+    max-width: 330px
+    text-align: end
+    @media (max-width: 576px)
+      text-align: center

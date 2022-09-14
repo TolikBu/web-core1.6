@@ -1,0 +1,142 @@
+.price
+  position: relative
+  &-title
+    background: linear-gradient(90deg, $bgc 0%, $white 98.61%)
+    margin: 0
+    padding: 15px 34px
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    text-transform: uppercase
+    color: $gray
+    border-top: 1px solid $aqua
+    @media (max-width: 576px)
+      margin-bottom: 16px
+  &-inner
+    padding: 0 34px 50px
+    @media (max-width: 768px)
+      padding: 0 24px 50px
+    @media (max-width: 576px)
+      overflow: visible
+  &-table
+    width: 100%
+    margin-bottom: 32px
+    @media (max-width: 576px)
+      width: 0
+      margin: 0 
+      margin-bottom: 34px
+      overflow: visible
+    &__body
+      display: table
+      @media (max-width: 576px)
+        width: 260px
+        display: flex
+    &__line
+      border-radius: 6px
+    &__line:not(:first-child)
+      background-color: #fff
+    @media (max-width: 576px)
+      &__line
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        padding: 16px
+        margin-right: 16px
+        width: 100%
+        height: 200px
+        position: relative
+      &__line:nth-child(1)
+        display: none
+    &__cell
+      padding: 23px 27px 23px 24px
+      font-weight: 400
+      font-size: 14px
+      line-height: 18px
+      letter-spacing: 0.2px
+      @media (max-width: 576px)
+        padding: 0
+        &:not(:last-child)
+          margin-bottom: 16px
+          margin-top: 20px
+          position: relative
+          max-height: 200px
+          &:nth-child(1)::before
+            position: absolute
+            content: 'Ремонтные услуги'
+            top: -20px
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: $gray
+          &:nth-child(2)::before
+            position: absolute
+            content: 'Цена'
+            top: -20px
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: $gray
+          &:nth-child(3)::before
+            position: absolute
+            content: 'Срок'
+            top: -20px
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: $gray
+        &--btn
+          position: absolute
+          right: 16px
+          width: 119px
+          bottom: 16px
+          height: auto
+      &--title
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        color: #7E7E82
+        mix-blend-mode: normal
+        opacity: 0.72
+    &__btn
+      margin: auto
+      margin-right: 0
+      min-width: 119px
+      @include flex-start
+      padding: 4px 12px
+      background-color: $pink
+      border-radius: 16px
+      cursor: pointer
+      &-text
+        font-weight: 700
+        font-size: 12px
+        line-height: 24px
+        letter-spacing: -0.15px
+        text-transform: uppercase
+        color: $white
+      &-arrow
+        width: 7px
+        height: 9px
+  &-oferta
+    margin: 0
+    max-width: 425px
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: $gray
+    margin-bottom: 16px
+  &-btn
+    width: 320px
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    cursor: pointer
+
+.swiper-pagination-price
+  position: relative
+

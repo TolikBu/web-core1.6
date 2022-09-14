@@ -1,0 +1,63 @@
+.head
+  &-menu
+    @include flex-start
+    padding: 19px 24px
+    background-color: $white
+    border-top: 1px solid $aqua
+    @media (min-width: 1200px)
+      display: none
+  &-logo
+    @include flex-start
+    &__btn
+      background-color: $pink
+      border-radius: 20px
+      width: 40px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      margin-right: 20px
+      &-line
+        position: relative
+        width: 10px
+        height: 2px
+        left: -4px
+        background-color: $white
+        border-radius: 1px
+        &::before
+          content: ''
+          position: absolute
+          width: 18px
+          height: 2px
+          top: -7px
+          background-color: $white
+          border-radius: 1px
+        &::after
+          content: ''
+          position: absolute
+          width: 14px
+          height: 2px
+          bottom: -7px
+          background-color: $white
+          border-radius: 1px
+  &-separator
+    width: 2px
+    height: 32px
+    background-color: $lightgray
+    border-radius: 1px
+    border: none
+    margin-right: 20px
+    @media (max-width: 576px)
+      display: none
+  &-contacts
+    @include flex-start
+    &__icon
+      width: 40px
+      height: 40px
+      cursor: pointer
+      &:not(:last-child)
+        margin-right: 16px
+.icon-top
+  @media (max-width: 576px)
+    display: none

@@ -1,0 +1,96 @@
+.brands
+  position: relative
+  &-title
+    background: linear-gradient(90deg, $bgc 0%, $white 98.61%)
+    margin: 0
+    padding: 15px 34px
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    text-transform: uppercase
+    color: $gray
+    border-top: 1px solid $aqua
+  &-inner
+    padding: 24px 34px 50px
+    @media (max-width: 768px)
+      padding: 24px 24px 51px
+  &-items
+    height: 160px
+    align-self: center
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    overflow: hidden
+    margin-bottom: 24px
+    transition: 0.25s
+    @media (max-width: 576px)
+      height: auto
+      overflow: visible
+      flex-wrap: nowrap
+      margin-bottom: 0
+    &--active
+      height: auto
+      transition: 0.25s
+    &__item
+      @include flex-start
+      padding: 16px
+      width: 240px
+      height: 72px
+      background: $white
+      border: 1px solid #EAEAEA
+      border-radius: 6px
+      margin-bottom: 16px
+      @media (max-width: 768px)
+        max-width: 224px
+        margin-right: 16px
+      @media (max-width: 576px)
+        margin-bottom: 0
+    &__logo
+      float: left
+    &__btn
+      position: relative
+      width: 40px
+      height: 40px
+      border: 2px solid $pink
+      border-radius: 20px
+      cursor: pointer
+      &-image
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 7px
+        height: 12px
+  &__btn
+    width: 135px
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    cursor: pointer
+    @media (max-width: 576px)
+      display: none
+    &-arrow
+      width: 7px
+      height: 10px
+      background-size: center
+      margin-left: 7px
+      margin-right: 10px
+      &--active
+        transform: rotate(180deg)
+
+.gradient-brands
+  position: absolute
+  width: 24px
+  top: 80px
+  right: 0
+  bottom: 50px
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%)
+  z-index: 100
+  display: none
+  @media (max-width: 768px)
+    display: block
+
+

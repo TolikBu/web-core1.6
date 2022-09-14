@@ -1,0 +1,98 @@
+.sidebar
+  position: relative
+  min-width: 320px
+  padding: 30px 30px 30px 22px
+  background-color: $white
+  @media (max-width: 400px)
+    width: 100%
+    padding: 24px 24px 32px 24px
+  &__close
+    position: fixed
+    width: 40px
+    height: 40px
+    display: none
+  @media (max-width: 1199px)
+    position: fixed
+    transform: translateX(-100%)
+    z-index: 100
+    height: -webkit-fill-available
+    &__close
+      position: relative
+      display: block
+      cursor: pointer
+      margin-right: 20px
+    &-logo
+      &__link
+        margin-right: 78px
+        @media (max-width: 400px)
+          margin-right: 147px
+  &--active
+    transform: translateX(0%)
+    transition: .5s
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2)
+    z-index: 100
+  &-logo
+    @include flex-start
+    margin-bottom: 37px
+    @media (max-width: 1199px)
+      justify-content: start
+    &__image
+      background-size: cover
+    &__search
+      width: 40px
+      height: 40px
+      cursor: pointer
+  &-nav
+    margin-bottom: 240px
+    @media (max-width: 576px)
+      margin-bottom: 32px
+    &__link
+      position: relative
+      margin-bottom: 28px
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.2px
+      cursor: pointer
+      &:hover
+        color: $gray
+        &::before
+          position: absolute
+          content: ''
+          width: 4px
+          height: 100%
+          border-radius: 2px
+          background-color: #41F6D7
+          left: -20px
+  &-contacts
+    display: flex
+    flex-direction: column
+    &__icons
+      width: 155px
+      margin-bottom: 16px
+      @include flex-start
+    &__icon
+      width: 40px
+      height: 40px
+      cursor: pointer
+    &__email
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.2px
+      margin-bottom: 12px
+    &__phone
+      font-weight: 700
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: -0.6px
+      margin-bottom: 40px
+.lang
+  &__version
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    cursor: pointer
+    &--active
+      color: #7E7E82

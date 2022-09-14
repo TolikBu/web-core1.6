@@ -1,0 +1,57 @@
+*
+  box-sizing: border-box
+
+body
+  font-family: "TTLakes-Medium", sans-serif
+  background-color: #fff
+  color: $text
+  position: relative
+
+.scroll
+  overflow: hidden
+
+.container-main
+  max-width: 1440px
+  margin: auto
+
+.desktop
+  display: flex
+  justify-content: space-between
+
+.services
+  background-color: $bgc
+  overflow: hidden
+  @media (max-width: 768px)
+    width: 100%
+
+.container-content
+  width: 100%
+
+button, a
+  cursor: pointer
+
+img
+  width: 100%
+
+.gradient
+  position: absolute
+  width: 24px
+  top: 60px
+  right: 0
+  bottom: 50px
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%)
+  z-index: 100
+  display: none
+  @media (max-width: 768px)
+    display: block
+
+.swiper-pagination-bullet
+  width: 12px
+  height: 12px
+  background: #B5B6BC
+  border-radius: 50%
+  bottom: 0
+
+@media (min-width: 576px)
+  .swiper-pagination
+    display: none

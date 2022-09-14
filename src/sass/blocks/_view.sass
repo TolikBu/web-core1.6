@@ -1,0 +1,90 @@
+.view
+  position: relative
+  &-title
+    background: linear-gradient(90deg, $bgc 0%, $white 98.61%)
+    margin: 0
+    padding: 15px 34px
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    text-transform: uppercase
+    color: $gray
+    border-top: 1px solid $aqua
+    @media (max-width: 576px)
+      margin-bottom: 16px
+  &-inner
+    padding: 0 34px 32px
+    @media (max-width: 768px)
+      padding: 0 24px 50px
+  &-items
+    height: 184px
+    align-self: center
+    padding: 24px 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    overflow: hidden
+    transition: .3s
+    box-sizing: border-box
+    margin-bottom: 24px
+    @media (max-width: 576px)
+      height: 160px
+      overflow: visible
+      flex-wrap: nowrap
+      margin-bottom: 0
+    &--active
+      height: auto
+      transition: .3s
+    &__item
+      position: relative
+      @include flex-start
+      align-items: flex-start
+      padding: 16px
+      width: 240px
+      height: 160px
+      background: $white
+      border: 1px solid #EAEAEA
+      border-radius: 6px
+      margin-bottom: 16px
+      @media (max-width: 768px)
+        width: 224px
+      @media (max-width: 576px)
+        min-width: 240px
+        margin-right: 16px
+    &__logo
+      float: left
+    &__btn
+      position: absolute
+      bottom: 16px
+      right: 16px
+      width: 40px
+      height: 40px
+      border: 2px solid $pink
+      border-radius: 20px
+      cursor: pointer
+      &-image
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 7px
+        height: 12px
+  &__btn
+    width: 135px
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    cursor: pointer
+    @media (max-width: 576px)
+      display: none
+    &-arrow
+      width: 7px
+      height: 10px
+      background-size: center
+      margin-left: 7px
+      margin-right: 10px
+      &--active
+        transform: rotate(180deg)

@@ -1,0 +1,59 @@
+.header
+  padding: 42px 34px 7px
+  &-name, &-name__feedback, &-name__request
+    @include flex-start
+  &-name
+    margin-bottom: 8px
+    &__title
+      position: relative
+      margin: 0
+      font-weight: 700
+      font-size: 28px
+      line-height: 40px
+      letter-spacing: -0.6px
+      &::before
+        position: absolute
+        content: ''
+        width: 4px
+        height: 100%
+        border-radius: 2px
+        background-color: #41F6D7
+        left: -34px
+    &__request
+      margin-right: 32px
+      cursor: pointer
+      @media (max-width: 1199px)
+        display: none
+    &__text
+      margin-right: 8px
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.2px
+    &__image
+      width: 40px
+  &-links
+    @include flex-start
+    justify-content: start
+    flex-wrap: wrap
+    @media (max-width: 768px)
+      display: flex
+      flex-wrap: nowrap
+      overflow: visible
+    &__item
+      padding: 8px 17px
+      border: 2px solid $bgc
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.2px
+      color: $gray
+      cursor: pointer
+      &:not(:last-child)
+        margin-right: 6px
+      &:hover
+        background-color: #FFF
+        border: 2px solid #B8FFEC
+        border-radius: 6px
+      @media (max-width: 768px)
+        min-width: fit-content
