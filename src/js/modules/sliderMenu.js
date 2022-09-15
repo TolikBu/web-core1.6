@@ -18,7 +18,6 @@ const sliderMenu = () => {
     window.addEventListener('resize', swiperCard)
   }
   swiperCard()
-  console.log('work');
 }
 
 export default sliderMenu
