@@ -310,7 +310,7 @@ template {
 
 body {
   font-family: "TTLakes-Medium", sans-serif;
-  background-color: #fff;
+  background-color: #F8F8F8;
   color: #1B1C21;
   position: relative; }
 
@@ -534,13 +534,16 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: start;
-    flex-wrap: wrap; }
+    justify-content: start; }
+    .header-links__wrapper {
+      flex-wrap: wrap; }
     @media (max-width: 768px) {
       .header-links {
         display: flex;
         flex-wrap: nowrap;
-        overflow: visible; } }
+        overflow: visible; }
+        .header-links__wrapper {
+          flex-wrap: nowrap; } }
     .header-links__item {
       padding: 8px 17px;
       border: 2px solid #F8F8F8;
@@ -549,7 +552,10 @@ img {
       line-height: 24px;
       letter-spacing: -0.2px;
       color: #7E7E82;
-      cursor: pointer; }
+      cursor: pointer;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
       .header-links__item:not(:last-child) {
         margin-right: 6px; }
       .header-links__item:hover {
