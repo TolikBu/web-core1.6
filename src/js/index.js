@@ -7,6 +7,7 @@ import menu from './modules/menu'
 import sliderBrands from './modules/sliderBrands'
 import sliderView from './modules/sliderView'
 import sliderPrice from './modules/sliderPrice'
+import sliderMenu from './modules/sliderMenu'
 
 modal()
 modalBackcall()
@@ -15,3 +16,4 @@ menu()
 sliderBrands()
 sliderView()
 sliderPrice()
+sliderMenu()

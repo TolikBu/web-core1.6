@@ -35,11 +35,14 @@
   &-links
     @include flex-start
     justify-content: start
-    flex-wrap: wrap
+    &__wrapper
+      flex-wrap: wrap
     @media (max-width: 768px)
       display: flex
       flex-wrap: nowrap
       overflow: visible
+      &__wrapper
+        flex-wrap: nowrap
     &__item
       padding: 8px 17px
       border: 2px solid $bgc
@@ -49,6 +52,7 @@
       letter-spacing: -0.2px
       color: $gray
       cursor: pointer
+      width: fit-content
       &:not(:last-child)
         margin-right: 6px
       &:hover
